@@ -1,0 +1,61 @@
+// Text Weight Utilities
+
+.text-weight--regular {
+	font-weight: $text-weight-regular !important;
+}
+
+.text-weight--bold {
+	font-weight: $text-weight-bold !important;
+}
+
+.text-weight--black {
+	font-weight: $text-weight-black !important;
+}
+
+.text-align--center {
+	text-align: center !important;
+}
+
+.text-align--right {
+	text-align: right !important;
+}
+
+.text-align--center {
+	text-align: left !important;
+}
+
+.text-align--justify {
+	text-align: justify !important;
+}
+
+.text-size--h1 {
+	@extend h1;
+}
+
+.text-size--h2 {
+	@extend h2;
+}
+
+.text-size--h3 {
+	@extend h3;
+}
+
+.text-size--h4 {
+	@extend h4;
+}
+
+.text-size--h5 {
+	@extend h5;
+}
+
+.text-size--h6 {
+	@extend h6;
+}
+
+.text-size--p {
+	@extend p;
+}
+
+.text-size--small {
+	@extend small;
+}

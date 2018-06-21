@@ -1,0 +1,115 @@
+//---------------------------------------
+// Utilities: Colors
+//---------------------------------------
+
+// Text Color Utilities
+
+.text--primary {
+	color: $color-primary !important;
+}
+
+.text--accent {
+	color: $color-accent !important;
+}
+
+.text--white {
+	color: $color-white !important;
+}
+
+.text--gray-100 {
+	color: $color-gray-100 !important;
+}
+
+.text--gray-200 {
+	color: $color-gray-200 !important;
+}
+
+.text--gray-300 {
+	color: $color-gray-300 !important;
+}
+
+.text--gray-400 {
+	color: $color-gray-400 !important;
+}
+
+.text--gray-500 {
+	color: $color-gray-500 !important;
+}
+
+.text--gray-600 {
+	color: $color-gray-600 !important;
+}
+
+.text--gray-700 {
+	color: $color-gray-700 !important;
+}
+
+.text--gray-800 {
+	color: $color-gray-800 !important;
+}
+
+.text--gray-900 {
+	color: $color-gray-900 !important;
+}
+
+.text--black {
+	color: $color-black !important;
+}
+
+// Background Color Utilities
+
+.bg--primary {
+	background: $color-primary !important;
+}
+
+.bg--accent {
+	background: $color-accent !important;
+}
+
+.bg--white {
+	background: $color-white !important;
+}
+
+.bg--gray-100 {
+	background: $color-gray-100 !important;
+}
+
+.bg--gray-200 {
+	background: $color-gray-200 !important;
+}
+
+.bg--gray-300 {
+	background: $color-gray-300 !important;
+}
+
+.bg--gray-400 {
+	background: $color-gray-400 !important;
+}
+
+.bg--gray-500 {
+	background: $color-gray-500 !important;
+}
+
+.bg--gray-600 {
+	background: $color-gray-600 !important;
+}
+
+.bg--gray-700 {
+	background: $color-gray-700 !important;
+}
+
+.bg--gray-800 {
+	background: $color-gray-800 !important;
+}
+
+.bg--gray-900 {
+	background: $color-gray-900 !important;
+}
+
+.bg--black {
+	background: $color-black !important;
+}
+
+.bg--gradient {
+	background: linear-gradient(-180deg, $color-white 0%, $color-gray-100 100%);
+}

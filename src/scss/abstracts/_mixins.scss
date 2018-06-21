@@ -1,0 +1,26 @@
+//---------------------------------------
+// Abstracts: Mixins
+//---------------------------------------
+
+// Breakpoints
+$breakpoints: (
+  xs: null,
+  sm: 54rem,
+  md: 72rem,
+  lg: 96rem,
+);
+
+// Media Queries
+@mixin breakpoint ($breakpoint) {
+    @if (map-has-key($breakpoints, $breakpoint) != true) {
+			@error "#{$breakpoint} is not a valid breakpoint.";
+    } 
+    @else if(map-get($breakpoints, $breakpoint)) == null {
+      @content;
+    } 
+    @else {
+      @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
+}

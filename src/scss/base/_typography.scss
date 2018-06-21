@@ -1,0 +1,108 @@
+//---------------------------------------
+// Base: Typography
+//---------------------------------------
+
+body {
+	font-size: $base-font-size;
+	font-family: $font-stack;
+	color: $text-color;
+	line-height: $line-height-3;
+}
+
+h1 {
+	font-size: $text-size-alpha;
+	line-height: $line-height-1;
+}
+
+h2 {
+	font-size: $text-size-beta;
+	line-height: $line-height-1;
+}
+
+h3 {
+	font-size: $text-size-gamma;
+	line-height: $line-height-1;
+}
+
+h4 {
+	font-size: $text-size-delta;
+	line-height: $line-height-2;
+}
+
+h5 {
+	font-size: $text-size-epsilon;
+	line-height: $line-height-2;
+}
+
+h6 {
+	font-size: $text-size-zeta;
+	line-height: $line-height-2;
+}
+
+h1, h2, h3 {
+	font-weight: $text-weight-black;
+}
+
+h4, h5, h6 {
+	font-weight: $text-weight-bold;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+small {
+	font-size: $text-size-zeta;
+}
+
+a {
+	box-shadow: inset 0 -2px 0 currentColor;
+	color: $color-primary;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	text-decoration: none;
+	transition: background-color .15s cubic-bezier(.33,.66,.66,1);
+	&:hover, &:focus {
+		background: transparentize($color-primary, .75);
+	}
+}
+
+strong,
+b {
+  font-weight: $text-weight-black;
+}
+
+.lead p {
+	font-size: $base-font-size;
+}
+
+@include breakpoint(lg) {
+	body {
+		font-size: $text-size-gamma;
+	}
+	h1 {
+		font-size: $text-size-giga;
+	}
+	h2 {
+		font-size: $text-size-alpha;
+	}
+	h3 {
+		font-size: $text-size-beta;
+	}
+	h4 {
+		font-size: $text-size-gamma;
+	}
+	h5 {
+		font-size: $text-size-delta;
+	}
+	h6 {
+		font-size: $text-size-epsilon;
+	}
+	small {
+		font-size: $text-size-delta;
+	}
+	.lead p {
+		font-size: $text-size-beta;
+	}
+}
