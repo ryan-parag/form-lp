@@ -2,13 +2,13 @@
 // Base: Base
 //---------------------------------------
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900');
 
 // Make everything border-box
 // Make 1rem = 10px for easier rem calculations
 html {
 	box-sizing: border-box;
-	font-size: 62.5%; 
+	font-size: 62.5%;
 }
 
 *, *:before, *:after {
