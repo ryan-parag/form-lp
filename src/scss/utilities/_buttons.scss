@@ -1,0 +1,104 @@
+//---------------------------------------
+// Utilities: Buttons
+//---------------------------------------
+@mixin button-reset {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  &:active {
+    outline: 0;
+  }
+}
+
+// Button Style Mixin
+// -------------------------
+// generates every style needed for a new button
+// when passed the apropriate colors
+//
+// $fill-color     - background color for the button
+// $text-color     - button text color
+// $secondary-text-color       - text color used with secondary modifier class (defaults to fill color)
+// $secondary-hover-text-color - background color used with secondary modifier class (defaults to text color)
+
+@mixin button-style($fill-color, $text-color, $secondary-text-color:$fill-color, $secondary-hover-text-color:$text-color) {
+  //button state colors
+  $hover-background-color:  darken($fill-color, 20%);
+  $active-background-color: darken($fill-color, 35%);
+  $secondary-active-background-color: darken($fill-color, 35%);
+
+  //base style
+  background-color: $fill-color;
+  color: $text-color;
+  border-color: $secondary-text-color;
+  border: 1px solid transparent;
+  transition: background-color .1s ease 0s;
+
+  //only have hover styles if button is not disabled
+  &:not(.button--disabled):not(:disabled) {
+    &:hover {
+      background-color: $hover-background-color;
+      transition: background-color .15s ease 0s;
+    }
+
+    &:active { background-color: $active-background-color}
+  }
+
+  //colored button + secondary button styles
+  &.button--secondary {
+    border: 1px solid $fill-color;
+    color: $secondary-text-color;
+    background: none;
+
+    &:hover {
+      transition: background-color .15s ease 0s;
+    }
+  }
+
+  //only have hover styles if button is not disabled
+  &.button--secondary:not(.button--disabled):not(:disabled) {
+    &:hover {
+      background-color: $fill-color;
+      color: $secondary-hover-text-color;
+    }
+
+    &:active {
+      background-color: $secondary-active-background-color;
+      border-color:     $secondary-active-background-color;
+      color:            $secondary-hover-text-color
+    }
+  }
+}
+
+
+.button {
+  @include button-reset;
+  font-family: inherit;
+  padding: .5em .875em;
+  line-height: 1;
+  border-radius: $border-radius;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  @include button-style($color-primary, $color-white);
+}
+
+.button--teal {
+  @include button-style($color-teal, $color-black);
+}
+
+.button--purple {
+  @include button-style($color-purple, $color-white);
+}
+
+.button--light {
+  @include button-style($color-light-green, $color-black);
+}
+
+.button--white {
+  @include button-style($color-white, $color-primary);
+}

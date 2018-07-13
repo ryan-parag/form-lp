@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  text-shadow: 0px 5px 12px rgba($color-black , .2);
+  &__wordmark {
+    font-weight: 700;
+  }
+  &__icon {
+    $size: 35px;
+    width: $size;
+    height: $size;
+    margin-right: 10px;
+  }
+}

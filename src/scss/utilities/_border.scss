@@ -6,6 +6,9 @@
 .circle {         	border-radius: 50%                                  !important; }
 
 .border {
+	&--all {
+		border: $border;
+	}
 	&--top {
 		border-top: $border;
 	}
